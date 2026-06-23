@@ -1,4 +1,12 @@
 {
+  "name": "typescript-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd Sequence_js && npx tsc && node dist/printingdetails.js"
+  },
   "dependencies": {
     "prompt-sync": "^4.2.0"
   },
@@ -6,13 +14,6 @@
     "@types/node": "^26.0.0",
     "@types/prompt-sync": "^4.2.3",
     "typescript": "^6.0.3"
-  },
-  "name": "typescript-learn",
-  "version": "1.0.0",
-  "description": "",
-  "main": "demo.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
