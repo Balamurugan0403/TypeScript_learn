@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        choice(name: 'FILE_NAME', choices: ['printingdetails', 'sumofnumbers', 'bmi', 'gamescore'], description: 'Select file to run')
+        choice(name: 'FILE_NAME', choices: ['printingdetails', 'sumofnumbers', 'bmi_medium', 'gamescore'], description: 'Select file to run')
         string(name: 'PARAM1', defaultValue: '', description: 'First input')
         string(name: 'PARAM2', defaultValue: '', description: 'Second input')
         string(name: 'PARAM3', defaultValue: '', description: 'Third input')
