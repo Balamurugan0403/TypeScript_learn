@@ -1,6 +1,5 @@
 export {};
-const input2=require("prompt-sync")();
-let weight:number=input2("Enter your weight in kg: ");
-let height:number=input2("Enter your height in meters: ");
-let bmi:number=weight/(height*height);
-console.log("BMI : "+bmi.toFixed(2));
+const weight: number = Number(process.argv[2]);
+const height: number = Number(process.argv[3]);
+const bmi: number = weight / (height * height);
+console.log("BMI : " + bmi.toFixed(2));
