@@ -5,7 +5,7 @@
   "main": "demo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-"build": "cd Sequence_js && npx tsc && node dist/printingdetails.js"
+"build": "cd Sequence_js && npx tsc"
   },
   "dependencies": {
     "prompt-sync": "^4.2.0"
