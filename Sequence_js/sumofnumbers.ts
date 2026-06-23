@@ -1,3 +1,4 @@
-let num1:number=5
-let num2:number=3
-console.log("Sum of num1 and num2",num1+num2)
+export {};
+const num1:number=Number(process.argv[2]);
+const num2:number=Number(process.argv[3]);
+console.log("Sum of num1 and num2 "+(num1+num2));
