@@ -47,7 +47,11 @@ pipeline {
                 bat 'npx tsc'
             }
         }
-
+        stage('Check dist') {
+    steps {
+        bat 'dir dist /s'
+    }
+}
         stage('Run') {
             steps {
                 bat "node dist\\${params.FOLDER_NAME}\\${params.FILE_NAME}.js ${params.PARAM1} ${params.PARAM2} ${params.PARAM3}"
